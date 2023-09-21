@@ -10,11 +10,106 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container-fluid">
-        <form action="response.html" method="get" >
-            <input type="text" name="teste">
-            <input type="submit">
+    <div class="container-fluid text-center">
+        <form action="response.html" method="get" id="escolha_menu">
+            <h1 class="text-primary titulo_cardapio">Cardápio</h1>
+            <div class="menu_type row" id="entrada"> 
+                <h2 class="titulo_tipo_refeicao">Entrada</h2>
+                    <div class="col-xs-4">
+                        <label><input type="radio" name="entrada" value="entrada1"> 
+                            <img src="assets/img/placeholder.png" alt="placeholder" class="img-responsive">
+                            <h3>Entrada 1</h3>
+                            <p>Descrição Entrada 1</p>
+                        </label>
+                    </div>
+                    <div class="col-xs-4">
+                        <label><input type="radio" name="entrada" value="entrada2"> 
+                            <img src="assets/img/placeholder.png" alt="placeholder" class="img-responsive">
+                            <h3>Entrada 2</h3>
+                            <p>Descrição Entrada 2</p>
+                        </label>
+                    </div>
+                    <div class="col-xs-4">
+                        <label><input type="radio" name="entrada" value="entrada3"> 
+                            <img src="assets/img/placeholder.png" alt="placeholder" class="img-responsive">
+                            <h3>Entrada 3</h3>
+                            <p>Descrição Entrada 3</p>
+                        </label>
+                    </div>
+            </div>
+            <div class="menu_type row" id="prato_principal">
+                <h2>Prato Principal</h2>
+                <div class="col-xs-4">
+                    <label><input type="radio" name="prato_principal" value="prato_principal1"> 
+                        <img src="assets/img/placeholder.png" alt="placeholder" class="img-responsive">
+                        <h3>Prato Principal 1</h3>
+                        <p>Descrição Prato Principal 1</p>
+                    </label>
+                </div>
+                <div class="col-xs-4">
+                    <label><input type="radio" name="prato_principal" value="prato_principal2"> 
+                        <img src="assets/img/placeholder.png" alt="placeholder" class="img-responsive">
+                        <h3>Prato Principal 2</h3>
+                        <p>Descrição Prato Principal 2</p>
+                    </label>
+                </div>
+                <div class="col-xs-4">
+                    <label><input type="radio" name="prato_principal" value="prato_principal3"> 
+                        <img src="assets/img/placeholder.png" alt="placeholder" class="img-responsive">
+                        <h3>Prato Principal 3</h3>
+                        <p>Descrição Prato Principal 3</p>
+                    </label>
+                </div>
+                <div class="col-xs-4">
+                    <label><input type="radio" name="prato_principal" value="prato_principal4"> 
+                        <img src="assets/img/placeholder.png" alt="placeholder" class="img-responsive">
+                        <h3>Prato Principal 4</h3>
+                        <p>Descrição Prato Principal 4</p>
+                    </label>
+                </div>
+                <div class="col-xs-4">
+                    <label><input type="radio" name="prato_principal" value="prato_principal5"> 
+                        <img src="assets/img/placeholder.png" alt="placeholder" class="img-responsive">
+                        <h3>Prato Principal 5</h3>
+                        <p>Descrição Prato Principal 5</p>
+                    </label>
+                </div>
+                <div class="col-xs-4">
+                    <label><input type="radio" name="prato_principal" value="prato_principal6"> 
+                        <img src="assets/img/placeholder.png" alt="placeholder" class="img-responsive">
+                        <h3>Prato Principal 6</h3>
+                        <p>Descrição Prato Principal 6</p>
+                    </label>
+                </div>
+            </div>
+            <div class="menu_type row" id="sobremesa">
+                <h2>Sobremesa</h2>
+                <div class="col-xs-4">
+                    <label><input type="radio" name="sobremesa" value="sobremesa1"> 
+                        <img src="assets/img/placeholder.png" alt="placeholder" class="img-responsive">
+                        <h3>Sobremesa 1</h3>
+                        <p>Descrição Sobremesa 1</p>
+                    </label>
+                </div>
+                <div class="col-xs-4">
+                    <label><input type="radio" name="sobremesa" value="sobremesa2"> 
+                        <img src="assets/img/placeholder.png" alt="placeholder" class="img-responsive">
+                        <h3>Sobremesa 2</h3>
+                        <p>Descrição Sobremesa 2</p>
+                    </label>
+                </div>
+                <div class="col-xs-4">
+                    <label><input type="radio" name="sobremesa" value="sobremesa3"> 
+                        <img src="assets/img/placeholder.png" alt="placeholder" class="img-responsive">
+                        <h3>Sobremesa 3</h3>
+                        <p>Descrição Sobremesa 3</p>
+                    </label>
+                </div>
+            </div>
+            <!--<input type="text" name="teste"> Sobremesa-->
+           <br><input class="btn btn-primary btn_style" type="submit" id="submit_button">
         </form>
+        <br><button class="btn btn-secondary btn_style" onclick="window.location.href='index.html'">Voltar para a Home</button>
     </div>
 </body>
 </html>

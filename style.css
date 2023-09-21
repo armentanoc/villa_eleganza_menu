@@ -1,7 +1,66 @@
+/*index.html CSS*/
+
 body {
-    padding-top: 20px;
+    text-align: center;
 }
 
 form {
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+div.container-fluid {
+    padding: 0;
+}
+
+#cardapio_home {
+    margin-top: 50px;
+}
+
+/*menu.html CSS*/
+
+.titulo_cardapio, .titulo_tipo_refeicao {
+    margin-top: 50px;
+}
+
+.titulo_tipo_refeicao {
+    margin-bottom: 25px;
+}
+
+.menu {
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.col-xs-4 {
+    padding: 20px;
+}
+
+.btn_style {
+    width: 15%;
     text-align: center;
 }
+
+/* Hide Radio */
+[type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* Image Styles */
+  [type=radio] + img {
+    cursor: pointer;
+  }
+  
+  /* Checked Style */
+  [type=radio]:checked + img {
+    outline: 2px solid;
+  }
+
+  /*response.html CSS*/
+
+  .return_to_home {
+    margin-bottom: 40px;
+  }
