@@ -28,8 +28,9 @@ header li{
     float: left;
     padding-right:20px;
 }
+
 a.logo{
-    background-image: url(assets/img/logo.png);
+    background-image: url(assets/img/index/logo.png);
     display:block;
     width:64px;
     height:105px;
@@ -38,7 +39,7 @@ a.logo{
 a.header-menu-cart{
     float:right;
     margin:35px;
-    background-image:url(assets/img/Vector.png);
+    background-image:url(assets/img/index/vector.png);
     height:33px;
     width:33px;
 }
@@ -57,13 +58,18 @@ main{
     padding-bottom:10%;
 }
 
-
-img.img-villa-eleganz-main{
-    width:1900px;
+img.img-villa-eleganza-main{
+    width:1356px;
 }
+
+div.img-villa-eleganza-main {
+    background-color: #AB4914;
+}
+
 div#container-menu-flex img{
     width:300px;
 }
+
 a.menu-link{
     font-size:40px;
     color:black;
@@ -75,13 +81,13 @@ div#container-menu-flex{
     justify-content: space-around;
 }
 a.appetizer-img{
-    background-image: url(assets/img/appetizer.png);
+    background-image: url(assets/img/index/appetizer.png);
 }
 a.main-img{
-    background-image: url(assets/img/main.png);
+    background-image: url(assets/img/index/main.png);
 }
 a.dessert-img{
-    background-image: url(assets/img/dessert.png);
+    background-image: url(assets/img/index/dessert.png);
 }
 a.appetizer-img,a.main-img,a.dessert-img{
     background-size:400px;
@@ -145,19 +151,19 @@ footer#container-information-footer #footer-links{
     padding-top:5%;
 }
 footer#container-information-footer .footer-link-insta{
-    background-image: url(assets/img/insta.png);
+    background-image: url(assets/img/index/insta.png);
     height:28px;
     width:25px;
     display: block;
 }
 footer#container-information-footer .footer-link-face{
-    background-image: url(assets/img/face.png);
+    background-image: url(assets/img/index/face.png);
     height:28px;
     width:13px;
     display: block;
 }
 footer#container-information-footer .footer-link-tt{
-    background-image: url(assets/img/tt.png);
+    background-image: url(assets/img/index/tt.png);
     height:25px;
     width:25px;
     display: block;
