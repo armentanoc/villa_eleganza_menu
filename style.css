@@ -28,6 +28,7 @@ header li{
     float: left;
     padding-right:20px;
 }
+
 a.logo{
     background-image: url(assets/img/index-img/logo.png);
     display:block;
@@ -61,9 +62,15 @@ main{
 div.img-villa-eleganza-main{
    background-color: #AB4914;
 }
+
+div.img-villa-eleganza-main {
+    background-color: #AB4914;
+}
+
 div#container-menu-flex img{
     width:300px;
 }
+
 a.menu-link{
     font-size:40px;
     color:black;
