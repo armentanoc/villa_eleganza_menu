@@ -29,7 +29,7 @@ header li{
     padding-right:20px;
 }
 a.logo{
-    background-image: url(assets/img/logo.png);
+    background-image: url(assets/img/index-img/logo.png);
     display:block;
     width:64px;
     height:105px;
@@ -38,7 +38,7 @@ a.logo{
 a.header-menu-cart{
     float:right;
     margin:35px;
-    background-image:url(assets/img/Vector.png);
+    background-image:url(assets/img/index-img/vector.png);
     height:33px;
     width:33px;
 }
@@ -58,8 +58,8 @@ main{
 }
 
 
-img.img-villa-eleganz-main{
-    width:1900px;
+div.img-villa-eleganza-main{
+   background-color: #AB4914;
 }
 div#container-menu-flex img{
     width:300px;
@@ -75,13 +75,13 @@ div#container-menu-flex{
     justify-content: space-around;
 }
 a.appetizer-img{
-    background-image: url(assets/img/appetizer.png);
+    background-image: url(assets/img/index-img/appetizer.png);
 }
 a.main-img{
-    background-image: url(assets/img/main.png);
+    background-image: url(assets/img/index-img/main.png);
 }
 a.dessert-img{
-    background-image: url(assets/img/dessert.png);
+    background-image: url(assets/img/index-img/dessert.png);
 }
 a.appetizer-img,a.main-img,a.dessert-img{
     background-size:400px;
@@ -145,19 +145,19 @@ footer#container-information-footer #footer-links{
     padding-top:5%;
 }
 footer#container-information-footer .footer-link-insta{
-    background-image: url(assets/img/insta.png);
+    background-image: url(assets/img/index-img/insta.png);
     height:28px;
     width:25px;
     display: block;
 }
 footer#container-information-footer .footer-link-face{
-    background-image: url(assets/img/face.png);
+    background-image: url(assets/img/index-img/face.png);
     height:28px;
     width:13px;
     display: block;
 }
 footer#container-information-footer .footer-link-tt{
-    background-image: url(assets/img/tt.png);
+    background-image: url(assets/img/index-img/tt.png);
     height:25px;
     width:25px;
     display: block;
