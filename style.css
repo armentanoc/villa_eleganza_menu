@@ -11,12 +11,164 @@ form {
 
 div.container-fluid {
     padding: 0;
+    margin-top:100px;
 }
 
 #cardapio_home {
     margin-top: 50px;
 }
 
+/*header-index*/
+#container-menu,header ul{
+    background-color: #AB4914;
+    height:110px;
+}
+header li{
+    list-style-type: none;
+    float: left;
+    padding-right:20px;
+}
+
+a.logo{
+    background-image: url(assets/img/index-img/logo.png);
+    display:block;
+    width:64px;
+    height:105px;
+
+}
+a.header-menu-cart{
+    float:right;
+    margin:35px;
+    background-image:url(assets/img/index-img/vector.png);
+    height:33px;
+    width:33px;
+}
+li.header-menu{
+    margin-top:35px;
+    color:white;
+}
+li.header-menu a{
+    color:white;
+    font-weight:bold;
+}
+
+/*main-index*/
+main{
+    background-color:#949494;
+    padding-bottom:10%;
+}
+
+
+div.img-villa-eleganza-main{
+   background-color: #AB4914;
+}
+
+div.img-villa-eleganza-main {
+    background-color: #AB4914;
+}
+
+div#container-menu-flex img{
+    width:300px;
+}
+
+a.menu-link{
+    font-size:40px;
+    color:black;
+    font-family: fantasy;
+}
+div#container-menu-flex{
+    margin-top:100px;
+    display: flex;
+    justify-content: space-around;
+}
+a.appetizer-img{
+    background-image: url(assets/img/index-img/appetizer.png);
+}
+a.main-img{
+    background-image: url(assets/img/index-img/main.png);
+}
+a.dessert-img{
+    background-image: url(assets/img/index-img/dessert.png);
+}
+a.appetizer-img,a.main-img,a.dessert-img{
+    background-size:400px;
+    background-repeat:no-repeat;
+    display: block;
+    width: 28em;
+    height:37em;
+}
+p.appetizer-text,p.main-text,p.dessert-text{
+    background-color: white;
+    height:100px;
+    font-size:35px;
+    color:#AB4914 ;
+    font-family:'Brush Script MT', cursive;
+    padding-top:25px;
+}
+
+
+div#container-aboutUs{
+    width:60%;
+    position: relative;
+    margin:10% auto;
+}
+div#container-aboutUs h1{
+    text-align: left;
+    font-weight:bold;
+    font-family:fantasy;
+    color:black;
+    letter-spacing:5px;
+}
+div#container-aboutUs p{
+    width:41%;
+    font-size: 20px;
+    color:black;
+    text-align: left;
+
+}
+div#container-aboutUs img{
+    height:600px;
+    float: right;
+    
+}
+
+
+footer#container-information-footer{
+    background-color: #AB4914;
+    height:300px;
+    display: flex;
+    justify-content: space-around;
+    color:white;
+}
+footer#container-information-footer #footer-info{
+    width:10%;
+    padding-top:5%;
+    text-align: left;
+}
+footer#container-information-footer #villa-logo{
+    padding-top:3%;
+}
+footer#container-information-footer #footer-links{
+    padding-top:5%;
+}
+footer#container-information-footer .footer-link-insta{
+    background-image: url(assets/img/index-img/insta.png);
+    height:28px;
+    width:25px;
+    display: block;
+}
+footer#container-information-footer .footer-link-face{
+    background-image: url(assets/img/index-img/face.png);
+    height:28px;
+    width:13px;
+    display: block;
+}
+footer#container-information-footer .footer-link-tt{
+    background-image: url(assets/img/index-img/tt.png);
+    height:25px;
+    width:25px;
+    display: block;
+}
 /*menu.html CSS*/
 
 .titulo_cardapio, .titulo_tipo_refeicao {
