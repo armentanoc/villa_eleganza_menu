@@ -2,16 +2,11 @@
 
 body {
     text-align: center;
-}
-
-form {
-    padding-right: 40px;
-    padding-left: 40px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 div.container-fluid {
     padding: 0;
-    margin-top:100px;
 }
 
 #cardapio_home {
@@ -19,14 +14,34 @@ div.container-fluid {
 }
 
 /*header-index*/
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
 #container-menu,header ul{
     background-color: #AB4914;
     height:110px;
+    border-bottom: 3px solid white;
+    font-size: 16.258px;
 }
+
 header li{
     list-style-type: none;
     float: left;
     padding-right:20px;
+}
+
+header li a {
+    padding-bottom: 8px;
+    display: block;
+}
+
+.border-left {
+    border-bottom: 2px solid white;
+    margin-right: 50%;
 }
 
 a.logo{
@@ -34,8 +49,15 @@ a.logo{
     display:block;
     width:64px;
     height:105px;
+    border-bottom: none;
 
 }
+
+header li a:hover {
+    color: #ebb230;
+    text-decoration: none;
+}
+
 a.header-menu-cart{
     float:right;
     margin:35px;
@@ -43,6 +65,15 @@ a.header-menu-cart{
     height:33px;
     width:33px;
 }
+
+a.header-home {
+    float:right;
+    margin:35px;
+    background-image:url(assets/img/others/home.svg);
+    height:33px;
+    width:40px;
+}
+
 li.header-menu{
     margin-top:35px;
     color:white;
@@ -54,49 +85,77 @@ li.header-menu a{
 
 /*main-index*/
 main{
-    background-color:#949494;
-    padding-bottom:10%;
+    padding-top: 110px;
+    padding-bottom: 1%;
+    background-image: url("https://images.unsplash.com/photo-1541140134513-85a161dc4a00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #dad8d8;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
 }
-
 
 div.img-villa-eleganza-main{
    background-color: #AB4914;
 }
 
-div.img-villa-eleganza-main {
-    background-color: #AB4914;
-}
-
-div#container-menu-flex img{
+div.container-menu-flex img{
     width:300px;
 }
 
-a.menu-link{
-    font-size:40px;
-    color:black;
-    font-family: fantasy;
+.container-menu {
+    padding-top: 4%;
+    padding-bottom: 4%;
+    background-image: url("assets/img/index-img/yellow-splash.png");
+    background-position: center;
+    background-size: 500px;
+    background-repeat: no-repeat;
 }
+
+a.menu-link{
+    font-size:48px;
+    color:black;
+    font-family: Britannic Bold;
+    padding-bottom: 1.5%;
+    border-bottom: 3px solid white;
+}
+
+a.menu-link:hover {
+    text-decoration: none;
+    color: #AB4914;
+}
+
 div#container-menu-flex{
-    margin-top:100px;
     display: flex;
     justify-content: space-around;
+    padding-right: 30%;
+    padding-left: 30%;
 }
+
 a.appetizer-img{
-    background-image: url(assets/img/index-img/appetizer.png);
+    background-image: url(assets/img/appetizers/onion.png);
+    margin-right: 40px;
 }
+
 a.main-img{
-    background-image: url(assets/img/index-img/main.png);
+    background-image: url(assets/img/main_courses/ribs.png);
+    margin-right: 40px;
 }
+
 a.dessert-img{
-    background-image: url(assets/img/index-img/dessert.png);
+    background-image: url(assets/img/desserts/brownie.png);
 }
+
 a.appetizer-img,a.main-img,a.dessert-img{
     background-size:400px;
-    background-repeat:no-repeat;
     display: block;
+    background-size: cover;
+    background-position: center;
     width: 28em;
     height:37em;
 }
+
 p.appetizer-text,p.main-text,p.dessert-text{
     background-color: white;
     height:100px;
@@ -106,19 +165,24 @@ p.appetizer-text,p.main-text,p.dessert-text{
     padding-top:25px;
 }
 
+p.appetizer-text, p.main-text {
+    margin-right: 40px;
+}
+
 
 div#container-aboutUs{
     width:60%;
-    position: relative;
     margin:10% auto;
 }
+
 div#container-aboutUs h1{
     text-align: left;
-    font-weight:bold;
-    font-family:fantasy;
+    font-family: Britannic Bold;
+    font-size: 64px;
     color:black;
-    letter-spacing:5px;
+    padding-bottom: 1.5%;
 }
+
 div#container-aboutUs p{
     width:41%;
     font-size: 20px;
@@ -126,12 +190,12 @@ div#container-aboutUs p{
     text-align: left;
 
 }
+
 div#container-aboutUs img{
     height:600px;
     float: right;
     
 }
-
 
 footer#container-information-footer{
     background-color: #AB4914;
@@ -140,6 +204,7 @@ footer#container-information-footer{
     justify-content: space-around;
     color:white;
 }
+
 footer#container-information-footer #footer-info{
     width:10%;
     padding-top:5%;
@@ -153,14 +218,14 @@ footer#container-information-footer #footer-links{
 }
 footer#container-information-footer .footer-link-insta{
     background-image: url(assets/img/index-img/insta.png);
-    height:28px;
-    width:25px;
+    height:29px;
+    width:26px;
     display: block;
 }
 footer#container-information-footer .footer-link-face{
     background-image: url(assets/img/index-img/face.png);
-    height:28px;
-    width:13px;
+    height:25px;
+    width:12px;
     display: block;
 }
 footer#container-information-footer .footer-link-tt{
@@ -172,7 +237,17 @@ footer#container-information-footer .footer-link-tt{
 /*menu.html CSS*/
 
 .titulo_cardapio, .titulo_tipo_refeicao {
-    margin-top: 50px;
+    margin-top: 20px;
+    font-family: Britannic Bold;
+    font-size: 48px;
+    color: #000;
+}
+
+.border-menu-top {
+    margin-top: 40px;
+    border-top: 3px solid #AB4914;
+    margin-right: 20%;
+    margin-left: 20%;
 }
 
 .row {
@@ -189,8 +264,15 @@ footer#container-information-footer .footer-link-tt{
     margin: auto;
 }
 
+.border-menu {
+    border-bottom: 3px solid #ebb230;
+    margin-right: 40%;
+    margin-left: 40%;
+}
+
 .menu_item {
-    height: 464px;
+    height: 350px;
+    width: 228px;
     object-fit: cover;
   }
 
@@ -200,41 +282,56 @@ footer#container-information-footer .footer-link-tt{
 }
 
 .description_meal {
-    height: 180px;
+    background-color: white;
+    padding-top: 40px;
+    height: 200px;
     font-family: Bodoni Moda;
     font-size: 16px;
     font-weight: 400;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 0;
 }
 
-.title_meal {
-    height: 53px;
-    margin-bottom: 20px;
-    font-family: Brittanic Bold;
-    font-weight: 400;
+h3.title_meal {
+    background-color: white;
+    margin: 0 auto;
+    padding-top: 20px;
+    font-family: "Brittanic Bold";
+    font-weight: 800;
+    font-size: 20px;
+    height: 64px;
 }
 
 .price_meal {
+    background-color: white;
+    margin: 0;
+    padding-top: 25px;
     font-size: 24px;
     font-family: Bodoni Moda;
-
 }
 
 .button_select {
     color: white;
     background-color: #ab4915;
-    height: 31px;
     width: 172px;
-    text-align: center;
-    display: flex;
-}
-
-.text_select {
-    margin: auto;
     font-family: Britannic Bold;
     font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+div.choice {
+    background-color: white;
+}
+
+.button_select:hover {
+    outline: 3px solid black;
+    color: white;
+}
+
+input#submit {
+    width: 200px;
 }
 
 .btn_style {
@@ -266,3 +363,51 @@ footer#container-information-footer .footer-link-tt{
     margin-bottom: 40px;
   }
 
+  .social-media-item {
+    list-style-type: none;
+  }
+
+  .social-media-list li {
+    display: inline-block;
+    padding-right: 10px;
+  }
+
+  .social-media-list {
+    padding-left: 20px;
+  }
+
+  .response_items {
+    color: black;
+    font-family: Britannic Bold;
+    font-size: 48px;
+  }
+
+  .response_img {
+    width: 400px;
+    height: 300px;
+    object-fit:cover;
+  }
+
+.splash-response {
+    padding-top: 4%;
+    padding-bottom: 4%;
+    background-image: url("assets/img/index-img/yellow-splash.png");
+    background-position: center;
+    background-size: 500px;
+}
+
+#return_to_home_from_response {
+    width: 350px;
+    margin-bottom: 0;
+}
+
+.main_response {
+    padding-bottom: 0;
+}
+
+.response_menu_item {
+    height: 300px;
+    width: 350px;
+    object-fit: cover;
+    object-position: center;
+}

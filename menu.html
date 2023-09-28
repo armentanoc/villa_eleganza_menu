@@ -13,12 +13,28 @@
     />
     <!--Personal CSS-->
     <link rel="stylesheet" href="style.css" />
+     <!--Google & Online Web Fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Josefin+Sans&display=swap" rel="stylesheet"></head>
+     <link href="https://db.onlinewebfonts.com/c/8be4a2f403c2dc27187d892cca388e24?family=Britannic+Bold" rel="stylesheet"> 
   </head>
   <body>
+    <header id="container-menu">
+      <ul>
+          <li><a href="" class="logo"></a></li>
+          <li class="header-menu"><a href="">Quem somos</a><div class="border-left"></div></li>
+          <li class="header-menu"><a href="">Unidades</a><div class="border-left"></div></li>
+          <li class="header-menu"><a href="menu.html">Cardápios</a><div class="border-left"></div></li>
+          <a href="index.html" class="header-home"></a>
+      </ul>
+  </header>
+  <main id="main_menu">
     <div class="container-fluid text-center">
       <form action="response.html" method="get" id="escolha_menu">
-        <h1 class="text-primary titulo_cardapio">Cardápio</h1>
+        <div class="border-menu-top"></div>
         <h2 class="titulo_tipo_refeicao">Entrada</h2>
+        <div class="border-menu"></div>
         <div class="menu_type row" id="entrada">
           <div class="col-xs-4">
             <div class="container-info-menu">
@@ -38,8 +54,8 @@
               <div class="choice">
                 <label
                   ><input type="radio" name="entrada" value="onion" />
-                  <div class="button_select">
-                    <span class="text_select">Select</span>
+                  <div class="btn button_select">
+                    Select
                   </div>
                 </label>
               </div>
@@ -62,8 +78,8 @@
               <div class="choice">
                 <label
                   ><input type="radio" name="entrada" value="wings" />
-                  <div class="button_select">
-                    <span class="text_select">Select</span>
+                  <div class="btn button_select">
+                    Select
                   </div>
                 </label>
               </div>
@@ -84,16 +100,18 @@
               <p class="price_meal">R$ 79,00</p>
               <div class="choice">
                 <label
-                  ><input type="radio" name="entrada" value="firecracker" />
-                  <div class="button_select">
-                    <span class="text_select">Select</span>
+                  ><input type="radio" name="entrada" value="nachos" />
+                  <div class="btn button_select">
+                    Select
                   </div>
                 </label>
               </div>
             </div>
           </div>
         </div>
-        <h2>Prato Principal</h2>
+        <div class="border-menu-top"></div>
+        <h2 class="titulo_tipo_refeicao">Prato Principal</h2>
+        <div class="border-menu"></div>
         <div class="menu_type row" id="prato_principal_first_line">
           <div class="col-xs-4">
             <div class="container-info-menu">
@@ -110,8 +128,8 @@
               <div class="choice">
                 <label
                   ><input type="radio" name="prato_principal" value="ribs" />
-                  <div class="button_select">
-                    <span class="text_select">Select</span>
+                  <div class="btn button_select">
+                    Select
                   </div>
                 </label>
               </div>
@@ -132,8 +150,8 @@
               <div class="choice">
                 <label
                   ><input type="radio" name="prato_principal" value="shrimp_brasil" />
-                  <div class="button_select">
-                    <span class="text_select">Select</span>
+                  <div class="btn button_select">
+                    Select
                   </div>
                 </label>
               </div>
@@ -154,8 +172,8 @@
               <div class="choice">
                 <label
                   ><input type="radio" name="prato_principal" value="spaghetti" />
-                  <div class="button_select">
-                    <span class="text_select">Select</span>
+                  <div class="btn button_select">
+                    Select
                   </div>
                 </label>
               </div>
@@ -178,8 +196,8 @@
                 <div class="choice">
                   <label
                     ><input type="radio" name="prato_principal" value="shrimp_monaco" />
-                    <div class="button_select">
-                      <span class="text_select">Select</span>
+                    <div class="btn button_select">
+                      Select
                     </div>
                   </label>
                 </div>
@@ -200,8 +218,8 @@
                 <div class="choice">
                   <label
                     ><input type="radio" name="prato_principal" value="carbonara" />
-                    <div class="button_select">
-                      <span class="text_select">Select</span>
+                    <div class="btn button_select">
+                      Select
                     </div>
                   </label>
                 </div>
@@ -222,15 +240,17 @@
                 <div class="choice">
                   <label
                     ><input type="radio" name="prato_principal" value="shrimp_olinda" />
-                    <div class="button_select">
-                      <span class="text_select">Select</span>
+                    <div class="btn button_select">
+                      Select
                     </div>
                   </label>
                 </div>
               </div>
             </div>
           </div>
-        <h2>Sobremesa</h2>
+          <div class="border-menu-top"></div>
+        <h2 class="titulo_tipo_refeicao">Sobremesa</h2>
+        <div class="border-menu"></div>
         <div class="menu_type row" id="sobremesa">
           <div class="col-xs-4">
             <div class="container-info-menu">
@@ -248,8 +268,8 @@
               <div class="choice">
                 <label
                   ><input type="radio" name="sobremesa" value="cocada" />
-                  <div class="button_select">
-                    <span class="text_select">Select</span>
+                  <div class="btn button_select">
+                    Select
                   </div>
                 </label>
               </div>
@@ -270,8 +290,8 @@
               <div class="choice">
                 <label
                   ><input type="radio" name="sobremesa" value="abacaxi" />
-                  <div class="button_select">
-                    <span class="text_select">Select</span>
+                  <div class="btn button_select">
+                    Select
                   </div>
                 </label>
               </div>
@@ -293,8 +313,8 @@
               <div class="choice">
                 <label
                   ><input type="radio" name="sobremesa" value="brownie" />
-                  <div class="button_select">
-                    <span class="text_select">Select</span>
+                  <div class="btn button_select">
+                    Select
                   </div>
                 </label>
               </div>
@@ -303,17 +323,41 @@
         </div>
         <!--<input type="text" name="teste"> Sobremesa-->
         <br /><input
-          class="btn btn-primary btn_style"
+          class="btn button_select"
+          id="submit"
           type="submit"
+          value="Finalizar Pedido"
           id="submit_button"
         />
       </form>
-      <br /><button
-        class="btn btn-secondary btn_style"
-        onclick="window.location.href='index.html'"
-      >
-        Voltar para a Home
-      </button>
+      <br/>
+    </main>
+    <footer id="container-information-footer">
+      <div id="footer-info">
+          <p>
+              Lorem ipsum<br>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <p>
+              Lorem ipsum<br>
+              Lorem ipsum dolor sit amet.
+          </p>
+      </div>
+      <div id="villa-logo">
+          <a href="" class="logo"></a>
+          Lorem ipsum<br>
+          Lorem ipsum<br>
+          Lorem ipsum
+      </div>
+      <div id="footer-links">
+          Redes sociais
+          <ul class="social-media-list">
+              <li class="social-media-item"><a href="menu.html" class="footer-link-insta"></a></li>
+              <li class="social-media-item"><a href="menu.html" class="footer-link-face"></a></li>
+              <li class="social-media-item"> <a href="menu.html" class="footer-link-tt"></a></li>
+          </ul>
+      </div>
+  </footer>
     </div>
   </body>
 </html>
