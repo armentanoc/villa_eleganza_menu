@@ -1,4 +1,11 @@
-/*index.html CSS*/
+/*constantes*/
+:root {
+    --light-orange: #ebb230;
+    --light-brown: #AB4914;
+    --light-grey: #dad8d8;
+}
+
+/*index.html*/
 
 body {
     text-align: center;
@@ -13,7 +20,7 @@ div.container-fluid {
     margin-top: 50px;
 }
 
-/*header-index*/
+/*header*/
 
 header {
     position: fixed;
@@ -22,16 +29,16 @@ header {
 }
 
 #container-menu,header ul{
-    background-color: #AB4914;
+    background-color: var(--light-brown);
     height:110px;
     border-bottom: 3px solid white;
     font-size: 16.258px;
 }
 
-header li{
+header li {
     list-style-type: none;
     float: left;
-    padding-right:20px;
+    padding-right: 20px;
 }
 
 header li a {
@@ -46,77 +53,81 @@ header li a {
 
 a.logo{
     background-image: url(assets/img/index-img/logo.png);
-    display:block;
-    width:64px;
-    height:105px;
-    border-bottom: none;
-
+    width: 64px;
+    height: 105px;
 }
 
 header li a:hover {
-    color: #ebb230;
+    color: var(--light-orange);
     text-decoration: none;
 }
 
 a.header-menu-cart{
+    background-image:url(assets/img/index-img/vector.png);
     float:right;
     margin:35px;
-    background-image:url(assets/img/index-img/vector.png);
     height:33px;
     width:33px;
 }
 
 a.header-home {
+    background-image:url(assets/img/others/home.svg);
     float:right;
     margin:35px;
-    background-image:url(assets/img/others/home.svg);
     height:33px;
     width:40px;
 }
 
-li.header-menu{
+li.header-menu {
     margin-top:35px;
-    color:white;
 }
-li.header-menu a{
+
+li.header-menu a {
     color:white;
     font-weight:bold;
 }
 
+/*header end*/
+
 /*main-index*/
+
 main{
+    background-image: url("https://images.unsplash.com/photo-1541140134513-85a161dc4a00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80");
     padding-top: 110px;
     padding-bottom: 1%;
-    background-image: url("https://images.unsplash.com/photo-1541140134513-85a161dc4a00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-color: #dad8d8;
+    background-color: var(--light-grey);
     background-blend-mode: multiply;
     background-attachment: fixed;
 }
 
+/*banner*/
+
 div.img-villa-eleganza-main{
-   background-color: #AB4914;
+   background-color: var(--light-brown);
 }
 
 div.container-menu-flex img{
     width:300px;
 }
 
+/*menu cardápio*/
+
 .container-menu {
+    background-image: url("assets/img/index-img/yellow-splash.png");
     padding-top: 4%;
     padding-bottom: 4%;
-    background-image: url("assets/img/index-img/yellow-splash.png");
     background-position: center;
     background-size: 500px;
     background-repeat: no-repeat;
 }
 
 a.menu-link{
+    font-family: Britannic Bold;
     font-size:48px;
     color:black;
-    font-family: Britannic Bold;
     padding-bottom: 1.5%;
     border-bottom: 3px solid white;
 }
@@ -132,6 +143,8 @@ div#container-menu-flex{
     padding-right: 30%;
     padding-left: 30%;
 }
+
+/*pratos*/
 
 a.appetizer-img{
     background-image: url(assets/img/appetizers/onion.png);
@@ -169,37 +182,40 @@ p.appetizer-text, p.main-text {
     margin-right: 40px;
 }
 
-
 div#container-aboutUs{
     width:60%;
     margin:10% auto;
 }
 
+/*quem somos*/
+
 div#container-aboutUs h1{
-    text-align: left;
     font-family: Britannic Bold;
-    font-size: 64px;
     color:black;
+    text-align: left;
+    font-size: 64px;
     padding-bottom: 1.5%;
 }
 
-div#container-aboutUs p{
+div#container-aboutUs p {
+    color:black;
     width:41%;
     font-size: 20px;
-    color:black;
     text-align: left;
 
 }
 
-div#container-aboutUs img{
-    height:600px;
+div#container-aboutUs img {
+    height: 600px;
     float: right;
     
 }
 
+/*footer-index*/
+
 footer#container-information-footer{
-    background-color: #AB4914;
-    height:300px;
+    background-color: var(--light-brown);
+    height: 300px;
     display: flex;
     justify-content: space-around;
     color:white;
@@ -210,12 +226,15 @@ footer#container-information-footer #footer-info{
     padding-top:5%;
     text-align: left;
 }
+
 footer#container-information-footer #villa-logo{
     padding-top:3%;
 }
+
 footer#container-information-footer #footer-links{
     padding-top:5%;
 }
+
 footer#container-information-footer .footer-link-insta{
     background-image: url(assets/img/index-img/insta.png);
     height:29px;
@@ -234,13 +253,17 @@ footer#container-information-footer .footer-link-tt{
     width:25px;
     display: block;
 }
+
+
+/*----------------------------------------------------------*/
+
 /*menu.html CSS*/
 
 .titulo_cardapio, .titulo_tipo_refeicao {
-    margin-top: 20px;
     font-family: Britannic Bold;
+    margin-top: 20px;
     font-size: 48px;
-    color: #000;
+    color: black;
 }
 
 .border-menu-top {
@@ -265,7 +288,7 @@ footer#container-information-footer .footer-link-tt{
 }
 
 .border-menu {
-    border-bottom: 3px solid #ebb230;
+    border-bottom: 3px solid var(--light-orange);
     margin-right: 40%;
     margin-left: 40%;
 }
@@ -282,10 +305,10 @@ footer#container-information-footer .footer-link-tt{
 }
 
 .description_meal {
+    font-family: Bodoni Moda;
     background-color: white;
     padding-top: 40px;
     height: 200px;
-    font-family: Bodoni Moda;
     font-size: 16px;
     font-weight: 400;
     padding-right: 20px;
@@ -294,28 +317,28 @@ footer#container-information-footer .footer-link-tt{
 }
 
 h3.title_meal {
+    font-family: "Brittanic Bold";
     background-color: white;
     margin: 0 auto;
     padding-top: 20px;
-    font-family: "Brittanic Bold";
     font-weight: 800;
     font-size: 20px;
     height: 64px;
 }
 
 .price_meal {
+    font-family: Bodoni Moda;
     background-color: white;
     margin: 0;
     padding-top: 25px;
     font-size: 24px;
-    font-family: Bodoni Moda;
 }
 
 .button_select {
-    color: white;
-    background-color: #ab4915;
-    width: 172px;
     font-family: Britannic Bold;
+    background-color: var(--light-brown);
+    color: white;
+    width: 172px;
     font-size: 24px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -357,7 +380,9 @@ input#submit {
     outline: 3px solid black;
   }
 
-  /*response.html CSS*/
+ /*----------------------------------------------------------*/
+
+  /*response.html*/
 
   .return_to_home {
     margin-bottom: 40px;
@@ -377,8 +402,8 @@ input#submit {
   }
 
   .response_items {
-    color: black;
     font-family: Britannic Bold;
+    color: black;
     font-size: 48px;
   }
 
@@ -389,9 +414,9 @@ input#submit {
   }
 
 .splash-response {
+    background-image: url("assets/img/index-img/yellow-splash.png");
     padding-top: 4%;
     padding-bottom: 4%;
-    background-image: url("assets/img/index-img/yellow-splash.png");
     background-position: center;
     background-size: 500px;
 }
