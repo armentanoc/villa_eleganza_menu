@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedido</title>
+    <link rel="shortcut icon" type="imagex/png" href="assets/img/index-img/logo.png">
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
      <!--Personal CSS-->
@@ -13,32 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Josefin+Sans&display=swap" rel="stylesheet"></head>
     <link href="https://db.onlinewebfonts.com/c/8be4a2f403c2dc27187d892cca388e24?family=Britannic+Bold" rel="stylesheet"> 
-    <script type="text/javascript">
-        // Criar um objeto URLSearchParams a partir da URL para procurar
-        var params = new URLSearchParams(window.location.search);
-        // Acessar o valor do parâmetro "entrada"
-        const entrada = params.get("entrada");
-        const prato_principal = params.get("prato_principal");
-        const sobremesa = params.get("sobremesa");
-        
-        //Header
-        document.write('<header id="container-menu"><ul><li><a href="" class="logo"></a></li><li class="header-menu"><a href="">Quem somos</a><div class="border-left"></div></li><li class="header-menu"><a href="">Unidades</a><div class="border-left"></div></li><li class="header-menu"><a href="menu.html">Cardápios</a><div class="border-left"></div></li><a href="index.html" class="header-home"></a></ul></header>')
-              
-        //Imprimir em tela
-        if(entrada != null & prato_principal != null & sobremesa != null) {
-        //Retorno
-        document.write('<main><br><h3 class="response_items">Confira o pedido</h3><div class="border-menu-top"></div><br><h3 class="response_items">Entrada</h3>')
-        document.write('<br><img src="assets/img/appetizers/' + entrada + '.png" class="response_menu_item"/><br>')
-        document.write('<br><h3 class="response_items">Prato Principal</h3>')
-        document.write('<br><img src="assets/img/main_courses/' + prato_principal + '.png" class="response_menu_item"/><br>')
-        document.write('<br><h3 class="response_items">Sobremesa</h3><br><br>');
-        document.write('<br><img src="assets/img/desserts/' + sobremesa + '.png" class="response_menu_item"/><br><br><br>')
-        document.write('<br/><a class="btn button_select" id="return_to_home_from_response" href="index.html">Confirmar pedido</a>')
-        } else {
-            document.write('<main><br><h3 class="response_items"> Por gentileza, retorne ao cardápio e escolha: <br><br> 1 Entrada <br> 1 Prato Principal <br> e 1 Sobremesa. </h3>')
-        }
-
-    </script>
+    <!--JavaScript File-->
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
           <div class="splash-response">
