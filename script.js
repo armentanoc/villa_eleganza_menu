@@ -20,13 +20,13 @@
   document.write(header);
         
   // Checando se há valor nulo
-  if(entrada != null & prato_principal != null & sobremesa != null) {
+  if(form_entrada != null & form_prato_principal != null & form_sobremesa != null) {
   // Retornando escolhas caso não exista valor nulo
   document.write(html_entrada);
   document.write(html_prato_principal);
   document.write(html_sobremesa);
   document.write(confirmar_pedido);
   } else {
-    // Retornando texto padrão se existir algum valor nulo
+    // Retornando texto padrão se existir algum valor
       document.write(valor_nulo);
   }
