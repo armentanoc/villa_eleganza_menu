@@ -7,8 +7,7 @@
 
 <p>Welcome to the Villa Eleganza Menu, a Web project built in HTML, styled in CSS and Bootstrap and powered by JavaScript that creates a dynamic and user-friendly restaurant web page where customers can conveniently order their favorite dishes, including appetizers (Entrada), main courses (Prato principal), and desserts (Sobremesa).</p>
 
-![(assets/img/placeholder.png)](assets/img/placeholder.png)
-<!--Inserir a imagem do site após finalizado-->
+<img width="1436" alt="Captura de Tela 2023-10-02 às 17 04 07" src="https://github.com/armentanoc/villa_eleganza_menu/assets/88147887/1cc9e5b1-6f1c-474a-8d04-4226377d8b2c">
 
 ## Setup
 1. Fist, clone the repo:
